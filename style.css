@@ -1,0 +1,152 @@
+/* Reset and body styling */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #222;
+  font-family: "Open Sans", sans-serif;
+  background-image: url('https://picsum.photos/1920/1080');
+  font-size: 120%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 450px;
+}
+
+.weather {
+  background: #000000d0;
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.card,
+.favorites {
+  background: #000000d0;
+  color: white;
+  padding: 1em;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 1em;
+  box-sizing: border-box;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 24px;
+  background: #7c7c7c2b;
+  color: white;
+  font-size: 105%;
+  width: calc(100% - 100px);
+}
+
+.search-button {
+  margin-left: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 44px;
+  width: 44px;
+  outline: none;
+  background: #7c7c7c2b;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.search-button:hover {
+  background: #7c7c7c6b;
+}
+
+h1.temp {
+  margin: 0;
+  margin-bottom: 0.4em;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  text-transform: capitalize;
+  margin-left: 8px;
+}
+
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+
+.weather.loading::after {
+  visibility: visible;
+  content: "Loading...";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 12px;
+  border: none;
+  padding: 0.5em 1em;
+  background: #7c7c7c2b;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  background: #7c7c7c6b;
+}
+
+.favorites h3 {
+  margin-top: 0;
+}
+
+.favorites-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.favorites-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.remove-favorite {
+  background: #ff4c4c;
+  border: none;
+  color: white;
+  padding: 0.3em 0.6em;
+  border-radius: 5px;
+  cursor: pointer;
+}
